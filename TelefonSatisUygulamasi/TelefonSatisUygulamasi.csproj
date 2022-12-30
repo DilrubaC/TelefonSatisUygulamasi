@@ -62,33 +62,76 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classlar\Kullanici.cs" />
-    <Compile Include="frmAnaSayfa.cs">
+    <Compile Include="Classlar\Telefon.cs" />
+    <Compile Include="Classlar\Veritabani.cs" />
+    <Compile Include="Formlar\frmAnaSayfa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAnaSayfa.Designer.cs">
+    <Compile Include="Formlar\frmAnaSayfa.Designer.cs">
       <DependentUpon>frmAnaSayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmKullaniciGirisi.cs">
+    <Compile Include="Formlar\frmKullaniciGirisi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmKullaniciGirisi.Designer.cs">
+    <Compile Include="Formlar\frmKullaniciGirisi.Designer.cs">
       <DependentUpon>frmKullaniciGirisi.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmYeniKullanici.cs">
+    <Compile Include="Formlar\frmMarkaEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmYeniKullanici.Designer.cs">
+    <Compile Include="Formlar\frmMarkaEkle.Designer.cs">
+      <DependentUpon>frmMarkaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmModelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmModelEkle.Designer.cs">
+      <DependentUpon>frmModelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmTelefonEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmTelefonEkle.Designer.cs">
+      <DependentUpon>frmTelefonEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmTelefonListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmTelefonListele.Designer.cs">
+      <DependentUpon>frmTelefonListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmYeniKullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmYeniKullanici.Designer.cs">
       <DependentUpon>frmYeniKullanici.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAnaSayfa.resx">
+    <Compile Include="TelefonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TelefonDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formlar\frmAnaSayfa.resx">
       <DependentUpon>frmAnaSayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmKullaniciGirisi.resx">
+    <EmbeddedResource Include="Formlar\frmKullaniciGirisi.resx">
       <DependentUpon>frmKullaniciGirisi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmYeniKullanici.resx">
+    <EmbeddedResource Include="Formlar\frmMarkaEkle.resx">
+      <DependentUpon>frmMarkaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmModelEkle.resx">
+      <DependentUpon>frmModelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmTelefonEkle.resx">
+      <DependentUpon>frmTelefonEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmTelefonListele.resx">
+      <DependentUpon>frmTelefonListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmYeniKullanici.resx">
       <DependentUpon>frmYeniKullanici.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -109,6 +152,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TelefonDataSet.xsc">
+      <DependentUpon>TelefonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TelefonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TelefonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TelefonDataSet.xss">
+      <DependentUpon>TelefonDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

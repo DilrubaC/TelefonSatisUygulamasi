@@ -66,5 +66,15 @@ namespace TelefonSatisUygulamasi
                 checkBox1.Text = "Göster";
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblYeniKullanici_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
